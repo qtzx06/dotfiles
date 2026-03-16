@@ -1,0 +1,47 @@
+# Theme
+theme = fsociety
+
+# Font
+font-family = MesloLGS NF
+font-size = 14
+
+# Window
+window-padding-x = 12
+window-padding-y = 8
+window-decoration = true
+macos-titlebar-style = tabs
+window-inherit-working-directory = true
+
+# cmd+t = auto split (hyprland dwindle style)
+keybind = super+t=new_split:auto
+
+# switch between splits (cmd+[ and cmd+])
+keybind = super+left_bracket=goto_split:previous
+keybind = super+right_bracket=goto_split:next
+keybind = super+left=ignore
+keybind = super+right=ignore
+keybind = super+up=ignore
+keybind = super+down=ignore
+
+# close split
+keybind = super+w=close_surface
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = true
+
+# Background
+background-opacity = 0.92
+background-blur-radius = 20
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Clipboard
+copy-on-select = clipboard
+
+# Shell integration
+shell-integration = zsh
+
+# Quick terminal (pull-down quake-style terminal)
+keybind = global:ctrl+grave_accent=toggle_quick_terminal

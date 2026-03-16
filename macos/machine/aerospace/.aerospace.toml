@@ -1,0 +1,85 @@
+# AeroSpace config - hyprland-style tiling
+
+start-at-login = true
+automatically-unhide-macos-hidden-apps = true
+
+# default tiling layout
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'horizontal'
+
+[gaps]
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.right = 8
+outer.top = 8
+outer.bottom = 8
+
+[mode.main.binding]
+
+# workspace switch with ctrl + arrows
+ctrl-left = 'workspace prev --wrap-around'
+ctrl-right = 'workspace next --wrap-around'
+
+# workspace switch with ctrl + number
+ctrl-1 = 'workspace 1'
+ctrl-2 = 'workspace 2'
+ctrl-3 = 'workspace 3'
+ctrl-4 = 'workspace 4'
+ctrl-5 = 'workspace 5'
+ctrl-6 = 'workspace 6'
+
+# move window to workspace
+ctrl-shift-1 = 'move-node-to-workspace 1'
+ctrl-shift-2 = 'move-node-to-workspace 2'
+ctrl-shift-3 = 'move-node-to-workspace 3'
+ctrl-shift-4 = 'move-node-to-workspace 4'
+ctrl-shift-5 = 'move-node-to-workspace 5'
+ctrl-shift-6 = 'move-node-to-workspace 6'
+
+# focus windows with cmd + arrows
+cmd-left = 'focus left'
+cmd-right = 'focus right'
+cmd-up = 'focus up'
+cmd-down = 'focus down'
+
+# move windows with cmd + shift + arrows
+cmd-shift-left = 'move left'
+cmd-shift-right = 'move right'
+cmd-shift-up = 'move up'
+cmd-shift-down = 'move down'
+
+# resize
+cmd-shift-minus = 'resize smart -50'
+cmd-shift-equal = 'resize smart +50'
+
+# cycle: tiling → floating → accordion (fullscreen stacked)
+cmd-shift-space = 'exec-and-forget /Users/qtzx/bin/toggle-layout.sh'
+
+# fullscreen
+cmd-shift-f = 'fullscreen'
+
+# new terminal window
+ctrl-t = 'exec-and-forget /Users/qtzx/bin/new-ghostty.sh'
+
+
+# join windows (like split in hyprland)
+cmd-shift-v = 'join-with right'
+cmd-shift-h = 'join-with down'
+
+
+# launch apps
+ctrl-b = 'exec-and-forget open -a "Brave Browser"'
+
+# right option (hyper key) — hyprland style
+ctrl-cmd-alt-shift-t = 'exec-and-forget /Users/qtzx/bin/new-ghostty.sh'
+ctrl-cmd-alt-shift-b = 'exec-and-forget open -a "Brave Browser"'
+ctrl-cmd-alt-shift-1 = 'workspace 1'
+ctrl-cmd-alt-shift-2 = 'workspace 2'
+ctrl-cmd-alt-shift-3 = 'workspace 3'
+ctrl-cmd-alt-shift-4 = 'workspace 4'
+ctrl-cmd-alt-shift-5 = 'workspace 5'
+ctrl-cmd-alt-shift-6 = 'workspace 6'
+ctrl-cmd-alt-shift-left = 'workspace prev --wrap-around'
+ctrl-cmd-alt-shift-right = 'workspace next --wrap-around'
+
