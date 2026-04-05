@@ -12,8 +12,8 @@ window-decoration = true
 macos-titlebar-style = hidden
 window-inherit-working-directory = true
 
-# cmd+t = new split pane (right)
-keybind = super+t=new_split:right
+# cmd+t = auto-alternate split direction (hyprland dwindle style)
+keybind = super+t=new_split:auto
 
 # switch between splits (cmd+[ and cmd+])
 keybind = super+left_bracket=goto_split:previous
