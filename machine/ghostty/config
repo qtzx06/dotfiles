@@ -9,11 +9,11 @@ font-size = 14
 window-padding-x = 12
 window-padding-y = 8
 window-decoration = true
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 window-inherit-working-directory = true
 
-# cmd+t = auto split (hyprland dwindle style)
-keybind = super+t=new_split:auto
+# cmd+t = new split pane (right)
+keybind = super+t=new_split:right
 
 # switch between splits (cmd+[ and cmd+])
 keybind = super+left_bracket=goto_split:previous
@@ -32,13 +32,17 @@ cursor-style-blink = true
 
 # Background
 background-opacity = 0.92
-background-blur-radius = 20
+background-blur-radius = 10
+
+# Performance — prevent memory bloat with many tmux sessions
+scrollback-limit = 5000
+window-vsync = false
 
 # Mouse
 mouse-hide-while-typing = true
 
 # Clipboard
-copy-on-select = clipboard
+copy-on-select = false
 
 # Shell integration
 shell-integration = zsh

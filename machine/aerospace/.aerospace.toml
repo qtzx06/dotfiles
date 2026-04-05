@@ -59,9 +59,8 @@ cmd-shift-space = 'exec-and-forget /Users/qtzx/bin/toggle-layout.sh'
 # fullscreen
 cmd-shift-f = 'fullscreen'
 
-# new terminal window
-ctrl-t = 'exec-and-forget /Users/qtzx/bin/new-ghostty.sh'
-
+# new terminal window (dwindle: auto-alternate split direction like hyprland)
+ctrl-t = 'exec-and-forget /Users/qtzx/bin/dwindle-spawn.sh'
 
 # join windows (like split in hyprland)
 cmd-shift-v = 'join-with right'
@@ -69,10 +68,8 @@ cmd-shift-h = 'join-with down'
 
 
 # launch apps
-ctrl-b = 'exec-and-forget open -a "Brave Browser"'
-
 # right option (hyper key) — hyprland style
-ctrl-cmd-alt-shift-t = 'exec-and-forget /Users/qtzx/bin/new-ghostty.sh'
+ctrl-cmd-alt-shift-t = 'exec-and-forget /Users/qtzx/bin/dwindle-spawn.sh'
 ctrl-cmd-alt-shift-b = 'exec-and-forget open -a "Brave Browser"'
 ctrl-cmd-alt-shift-1 = 'workspace 1'
 ctrl-cmd-alt-shift-2 = 'workspace 2'
@@ -82,4 +79,7 @@ ctrl-cmd-alt-shift-5 = 'workspace 5'
 ctrl-cmd-alt-shift-6 = 'workspace 6'
 ctrl-cmd-alt-shift-left = 'workspace prev --wrap-around'
 ctrl-cmd-alt-shift-right = 'workspace next --wrap-around'
+
+# continue all stalled claude sessions
+ctrl-cmd-alt-shift-c = 'exec-and-forget /Users/qtzx/bin/continue-all-claude.sh'
 
